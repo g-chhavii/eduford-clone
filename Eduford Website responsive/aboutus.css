@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+@media (max-width:600px) and (min-width:100px){
+    
+    body{
+        padding: 0%;
+    }
+    .navbar img{
+        width: min-content;
+        height: 40px;
+        width: 40px;
+        margin-left: 100px;
+    }
+        
+    .navlinks{
+        margin-top: 70px;
+        display: flex;
+        font-size:2px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+    }
+        
+    .hero-banner{
+        display: inline;
+        margin: 0%;
+        padding: 0%;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-button{
+     position: absolute;
+     margin-bottom: 30px;
+     width: fit-content;
+    }
+    .hero-img{
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+    }
+    .hero-section h1{
+        display: flex;
+        flex-direction: column;
+    }
+     
+
+    .footer-box{
+
+        justify-content:center;
+
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 0%;
+        margin-bottom: 270px;
+    }
+    .footer-box h4{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-box p{
+        display: inline-block;
+        color: #777;
+        font-size: 9px;
+    }
+    
+    .fa{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*nav bar*/
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 13px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover:after{
+    width: 100%;
+}
+
+.heading{
+    text-align: center;
+    margin-left: 2px;
+    margin-top: 90px;
+    color: white;
+    font-size: 25px;
+}
+
+/*hero banner*/
+
+.hero-banner{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+.hero-section{
+    text-align: left;
+}
+.hero-section h1{
+    font-size: 30px;
+}
+.hero-section p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    color: #777;
+}
+
+.hero-button{
+    display: inline-block;
+    border: 1px solid #f44336;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    transition: 0.8s ease-in;
+    font-size: 25px;
+}
+.hero-button:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+/*footer*/
+footer{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    text-align: center;
+}
+footer h4{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer p{
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 13px;
+}

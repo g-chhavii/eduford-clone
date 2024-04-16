@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+@media (max-width:600px) and (min-width:100px){
+    
+    body{
+        padding: 0%;
+    }
+    .navbar img{
+        width: min-content;
+        height: 40px;
+        width: 40px;
+        margin-left: 100px;
+    }
+        
+    .navlinks{
+        margin-top: 70px;
+        display: flex;
+        font-size:2px;
+        position: absolute;
+        justify-content: center;
+    }
+  /*footer*/
+    .footer-box{
+
+        justify-content:center;
+
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 0%;
+        margin-bottom: 250px;
+    }
+    .footer-box h4{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-box p{
+        display: inline-block;
+        color: #777;
+        font-size: 9px;
+    }
+    
+    .fa{
+        display: flex;
+        justify-content: center;
+    }
+
+    .course1 p{
+        font-size: 5px;
+      }
+      .course-row{
+        display: flex;
+        flex-direction: column;
+      }
+
+          /*facilities*/
+    .layer{
+        display: none;
+      }
+      .Facilities{
+          width: 90px;
+      }
+      .progams-box{
+          display: flex;
+          flex-direction: column;
+      }
+      .progams{
+  
+          width: -5px;
+      }
+  
+      .progams h2{
+          font-size: 10px;
+      }
+
+}
+
+/*nav bar*/
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 13px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover:after{
+    width: 100%;
+}
+
+.heading{
+    text-align: center;
+    margin-left: 2px;
+    margin-top: 90px;
+    color: white;
+    font-size: 25px;
+}
+
+/*courses banner*/
+.courses{
+    padding-top: 7%;  
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+
+.courses h1{
+    font-size: 36px;  
+    font-weight: 600;
+}
+.courses p{
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+.courses h3{
+    text-align: center;
+    margin:10px 0;
+    font-weight: 520;
+    font-size:30px;
+}
+
+.course-row{
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.course1{
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding:  20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    height: 400px;
+    text-align: center;
+}
+.course1:hover{
+ box-shadow: 0 0 20px 0px;
+}
+
+/*facilities*/
+
+.Facilities{
+    padding-top: 3%;  
+    width: 80%;
+    margin: auto;
+}
+
+.Facilities h1{
+    font-size: 36px;  
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Facilities p{
+    color: #777;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.programs img{
+    height: 300px;
+    width: 353px;
+    box-sizing: inherit;
+    outline: none;
+    border-radius: 10px;
+}
+.programs{
+    display: flex;
+    flex-direction: column;
+}
+.programs h2{
+    margin-top: 30px;
+}
+.programs p{
+    display: flex;
+    text-align: left;
+    line-height: 25px;
+    text-overflow: inherit;
+    margin-top: 20px;
+}
+
+/*footer*/
+footer{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    text-align: center;
+}
+footer h4{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer p{
+    margin-bottom: 20px;
+    color: #777;
+}

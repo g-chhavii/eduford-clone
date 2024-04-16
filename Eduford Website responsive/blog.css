@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+@media (max-width:600px) and (min-width:100px){
+    
+    /*nav bar*/
+    .navbar img{
+        width: min-content;
+        height: 40px;
+        width: 40px;
+        margin-left: 100px;
+    }
+    
+    .navlinks{
+        margin-top: 70px;
+        display: flex;
+        font-size:2px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+           /*footer*/
+        .footer-box{
+    
+            justify-content:center;
+    
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 0%;
+            margin-bottom: 270px;
+        }
+        .footer-box h4{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-box p{
+            display: inline-block;
+            color: #777;
+            font-size: 9px;
+        }
+        
+        .fa{
+            display: flex;
+            justify-content: center;
+        }
+
+        /*container*/
+        .left img{
+            display: none;
+            margin-top: 2px;
+        }
+        .left h4{
+             font-size: 20px;
+        }
+
+        .right li{
+           text-align: left;
+           display: inline;
+        }
+
+        .right h6{
+            font-size: 20px;
+        }
+
+
+    }
+
+/*nav bar*/
+
+.header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar img{
+    width: 150px;
+}
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    font-size: 13px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover:after{
+    width: 100%;
+}
+
+.heading{
+    text-align: center;
+    margin-left: 2px;
+    margin-top: 90px;
+    color: white;
+    font-size: 25px;
+}
+/*container left right */
+
+.container{
+    padding: 40px 100px 10px 100px;
+}
+
+.left p{
+    color: #777;
+}
+.left h4{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.left img{
+    margin-left: 300px;
+    height: 460px;
+    width: 660px;
+}
+
+.right{
+    position: relative;
+}
+        .right h6{
+            font-size: 20px;
+            font-weight:700 ;
+        }
+
+.right h5{
+    margin-bottom: 30px;
+    font-size: 18px;
+    border: 2px solid #f44336;
+    text-align: center;
+    font-weight: 600;
+    background-color: #f44336;
+    color: white;
+}
+
+.right li{
+    text-align: center;
+    list-style: none;
+    line-height: 50px;
+    color: #777;
+}
+
+
+/*footer*/
+footer{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    text-align: center;
+}
+footer h4{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer p{
+    margin-bottom: 20px;
+    color: #777;
+}
